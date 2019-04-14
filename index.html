@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>See and Say</title>
+  <link rel="stylesheet" href="see-and-saycss">
+  <script src="see-and-say.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="550">
+        <path id="spinner-handle-border"
+        d="
+        M 145 130  
+        L 155 70
+        L 245 70
+        L 270 300 Z" fill="none" stroke="#BBB51C" style="stroke-width:20px"/> <!-- handle border -->
+        <path id="spinner-handle"
+        d="
+        M 145 130  
+        L 155 70
+        L 245 70
+        L 270 300 Z" fill="none" stroke="#FFEA11" style="stroke-width:18px"/> <!-- handle -->
+        <path id="spinner-left-leg-border"
+        d="
+        M 120 450
+        L 100 510
+        L 145 510  
+        L 155 450 Z" fill="none" stroke="#BBB51C" style="stroke-width:20px"/> <!-- left leg border -->
+        <path id="spinner-left-leg"
+        d="
+        M 120 450
+        L 100 510
+        L 145 510  
+        L 155 450 Z" fill="none" stroke="#FFEA11" style="stroke-width:18px"/> <!-- left leg -->
+        <path id="spinner-right-leg"
+        d="
+        M 280 450
+        L 300 510
+        L 255 510  
+        L 245 450 Z" fill="none" stroke="#BBB51C" style="stroke-width:20px"/> <!-- right leg -->
+        <path id="spinner-right-leg"
+        d="
+        M 280 450
+        L 300 510
+        L 255 510  
+        L 245 450 Z" fill="none" stroke="#FFEA11" style="stroke-width:18px"/> <!-- right leg border -->
+        <circle cx="200" cy="300" r="192" fill="#BBB51C"/> <!-- outer circle outer border -->
+        <circle cx="200" cy="300" r="190" fill="#FFEA11"/> <!-- outer circle -->
+		<circle cx="200" cy="300" r="182" fill="#BBB51C"/> <!-- outer circle inner border -->
+		<circle cx="200" cy="300" r="180" fill="#222222"/>
+		<g id="spinner-board"></g>
+		<circle cx="200" cy="300" r="90" fill="#0a5acd" stroke="#5480c0" style="stroke-width:2px"/> <!-- inner blue circle -->
+        <path id="spinner-arrow" onclick="toggleSpinning();"
+        d="
+        M 175 375 
+        L 175 230 
+        L 168 230 
+        L 200 210 
+        L 232 230 
+        L 225 230 
+        225 375 Z" fill="#bb0019" stroke="#e9241c" style="stroke-width:2px"/> <!-- spinner -->
+    </svg>
+</div>
+</body>
+<meta name="author" content="Liz Quin; equin@virginia.edu">
+</html>
